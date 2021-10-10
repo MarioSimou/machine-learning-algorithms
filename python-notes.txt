@@ -1,0 +1,25 @@
+Data Cleaning
+---------------------
+Empty/Duplicate Values
+ - dropna(inplace=True|False)
+    - inPlace determines if the existing Dataframe is updated or a new one is created
+ - fillna(value, inplace=True|False)
+    - df['Column].fillna(value, inplace=True) (for a single column)
+ - drop_duplicates()
+    - duplicated() (if you want to check if a row is duplicated)
+Replace Values
+ - fillna(value)
+ - df.loc['row', 'column'] = value
+
+Correlations
+------------------
+df.corr() (returns a correlation matrix)
+
+Plotting
+------------------
+- Normal Plot
+  - df.plot()
+- Scatter
+  - df.plot(kind='scatter', x = 'column', y = 'column')
+- Histogram
+  - df['Column'].plot(kind='hist')
